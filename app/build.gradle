@@ -6,6 +6,10 @@ plugins {
 android {
     compileSdk 32
 
+    viewBinding {
+        enabled true
+    }
+
     defaultConfig {
         applicationId "br.com.roll_dices_challenge"
         minSdk 21
