@@ -2,4 +2,5 @@
     <string name="app_name">roll-dices-challenge</string>
     <string name="left_dice">left dice</string>
     <string name="right_dice">right_dice</string>
+    <string name="roll_dices">LANÇAR DADOS</string>
 </resources>
