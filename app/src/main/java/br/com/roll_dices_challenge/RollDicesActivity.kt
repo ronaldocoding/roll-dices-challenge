@@ -14,12 +14,12 @@ class RollDicesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val view = binding.root
         setContentView(view)
+        rollDices()
         setUpRollDicesButton()
     }
 
     private fun setUpRollDicesButton() {
-        val rollDicesButton = binding.rollDicesButton
-        rollDicesButton.setOnClickListener {
+        binding.rollDicesButton.setOnClickListener {
             rollDices()
         }
     }
@@ -34,18 +34,15 @@ class RollDicesActivity : AppCompatActivity() {
         val nextLeftDiceId = getDiceId(leftDiceRollResult)
         val nextRightDiceId = getDiceId(rightDiceRollResult)
 
-        val leftDice = binding.leftDice
-        val rightDice = binding.rightDice
-
-        leftDice.setImageResource(nextLeftDiceId)
-        rightDice.setImageResource(nextRightDiceId)
+        binding.leftDice.setImageResource(nextLeftDiceId)
+        binding.rightDice.setImageResource(nextRightDiceId)
     }
 
     private fun getDiceId(diceNumber: Int): Int {
-        return this.resources.getIdentifier(
+        return resources.getIdentifier(
             "dice_$diceNumber",
             "drawable",
-            this.packageName
+            packageName
         )
     }
 
