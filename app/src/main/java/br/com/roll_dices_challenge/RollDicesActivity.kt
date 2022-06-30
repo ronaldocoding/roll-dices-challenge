@@ -44,7 +44,7 @@ class RollDicesActivity : AppCompatActivity() {
     private fun getDiceId(diceNumber: Int): Int {
         return this.resources.getIdentifier(
             "dice_$diceNumber",
-            "string",
+            "drawable",
             this.packageName
         )
     }
