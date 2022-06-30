@@ -16,4 +16,6 @@ class RollDicesActivity : AppCompatActivity() {
         setContentView(view)
     }
 
+    private fun getRandomDice(): Int = (1..6).random()
+
 }
