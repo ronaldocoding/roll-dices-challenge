@@ -1,3 +1,3 @@
 # Roll dices challenge
 
-Primeiro desafio proposto no Grupo de Estudo - Dreamers
+Primeiro desafio proposto no Grupo de Estudos - Dreamers
